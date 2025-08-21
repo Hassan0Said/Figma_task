@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Document</title>
+
+  <!--CSS Link-->
+  <link rel="stylesheet" href="./style.css"/>
+
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!--Navbar Brand Font-->
+  <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet"/>
+
+  <!--Font Poppins-->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+
+  <!--Font Awesome For Icons-->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+
+  <!-- Minimal responsive fixes for inline styles -->
+  <style>
+    /* علشان الـ inline margin-left:200px ما يبوظش المنيو على الموبايل */
+    @media (max-width: 991.98px){
+      #navbarNav .navbar-nav { margin-left: 0 !important; }
+    }
+  </style>
+</head>
+<body>
+  <main class="firstMain">
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark px-3" style="background: linear-gradient(0deg, rgba(0,0,0,0.075) 0%, rgba(0,0,0,0.25) 100%);">
+      <div class="container-fluid d-flex justify-content-between align-items-center">
+        <a class="navbar-brand" href="#" style="font-family: 'Dela Gothic One', cursive;">CreatiVibe</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+          <!-- مفيش تغيير في الكلام؛ بس سبت الستايل زي ما هو، ومعالجة الريسبونسيف فوق -->
+          <ul class="navbar-nav" style="margin-left: 200px;">
+            <li class="nav-item">
+              <a class="nav-link px-3 text-white" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3 text-white" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3 text-white" href="#">Offers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3 text-white" href="#">Contact Us</a>
+            </li>
+          </ul>
+
+          <div class="d-flex">
+            <button class="btn" style="width: 160px; height: 40px; background-color: rgba(249, 115, 22, 1)!important; color: black;">Join Us Today</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!--Center Div-->
+    <div class="container-fluid d-flex flex-column justify-content-evenly ms-md-5 mt-5 px-3" style="max-width: 600px; height: 300px; background: linear-gradient(270deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.32) 100%);">
+      <div style="color: rgba(249, 115, 22, 1); font-weight: 400; font-family:'Dela Gothic One', cursive; letter-spacing:1px;">
+        Empowering creativity, connections, and driving <br> success—step into a world where your ideas <br> thrive.
+      </div>
+      <div class="text-white" style="font-family: 'Poppins', sans-serif; font-weight: 100;">
+        At <span style="color: rgba(249, 115, 22, 1);"> CREATIVIBE</span>, we provide not just a place to work, but a place to flourish. And innovation meets collaboration in a dynamic workspace designed for the modern professional.
+      </div>
+      <div>
+        <button class="btn" style="width: 160px; height: 40px; background-color: rgba(249, 115, 22, 1)!important; color: black;">Join Us Today</button>
+      </div>
+    </div>
+
+    <!--Three Cards-->
+    <section style="width: 100%; padding:35px 0;">
+      <div class="container-fluid">
+        <div class="row justify-content-center g-3 px-3">
+          <!--Card 1-->
+          <div class="col-12 col-sm-10 col-md-6 col-lg-4 d-flex">
+            <div class="card shadow-lg flex-fill" style="min-height:200px; background: linear-gradient(270deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.32) 100%); border-radius: 12px; padding: 20px;">
+              <div class="d-flex justify-content-center">
+                <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_28_80)">
+                    <path d="M32.3 12.7333L24.0333 4.46665C23.7667 4.19998 23.3667 4.19998 23.1 4.46665L20.0333 7.53332C19.7667 7.79998 19.7667 8.19998 20.0333 8.46665L20.2333 8.66665C19.8333 8.99998 19.3 9.19998 18.7667 9.26665C18.1667 9.33332 17.5667 9.53332 17.0333 9.86665L16.6333 9.46665C15.9667 8.79998 15.0333 8.33332 14.0333 8.19998C13.5 8.13332 13.0333 7.93332 12.5667 7.59998L12.7667 7.39998C13.0333 7.13332 13.0333 6.73332 12.7667 6.46665L9.7 3.39998C9.3 2.99998 8.9 3.26665 8.76666 3.39998L0.699996 11.6666C0.566663 11.8 0.366663 12.2666 0.699996 12.6L3.76666 15.6666C4.1 16.0666 4.56666 15.8 4.7 15.6666L4.96666 15.4C5.3 15.8 5.43333 16.2666 5.5 16.7333C5.63333 17.7333 6.1 18.7333 6.76666 19.4L7.1 19.7333L6.5 20.3333C4.63333 22.6 6.76666 24.1333 7.5 24.2C7.36666 24.5333 7.36666 24.8666 7.3 25.2C7.23333 25.7333 8.23333 27.8666 10.3667 27.0666C10.4333 27.4666 10.6333 27.8666 10.9667 28.1333C12.5 29.4667 13.9 28.4 14.2333 28.0666L14.8333 27.4667C14.8333 27.4667 16.3 29.6666 18.3667 28.3333C18.7667 28.0667 19.0333 27.6667 19.1667 27.2667C21.2333 28.6667 22.7 26.5333 22.7 26C23.8333 26.4667 24.7667 25.8 25.1 25.4667C25.7667 24.8 25.9 23.8666 25.6333 23.0666C26.0333 22.9333 28.1 22.0666 26.9667 19.6666C27.3 19.1333 27.5 18.5333 27.6333 17.8666C27.7 17.3333 27.9 16.8666 28.2333 16.4C28.2333 16.4 28.8333 17.2 29.3667 16.6L32.4333 13.5333C32.5667 13.4 32.5667 13 32.3 12.7333ZM4.23333 14.2L2.16666 12.1333L9.5 4.79998L11.5667 6.86665L4.23333 14.2ZM7.3 22.6666C6.96666 22.3333 7.03333 21.6666 7.43333 21.3333L8.03333 20.7333L9.36666 22.0666L8.7 22.7333C8.03333 23.2 7.5 22.8 7.3 22.6666ZM8.96666 25.7333C8.23333 25.2 8.76666 24.4666 9.36666 23.8666C9.43333 23.8 10.3 23 10.3 23L11.6333 24.3333C11.5667 24.2666 9.9 26.5333 8.96666 25.7333ZM13.1667 27.2C12.8333 27.5333 12.2333 27.5333 11.8333 27.2C11.5 26.8666 11.5 26.4666 11.7 26.0666C11.9 25.8666 12.5 25.2 12.5 25.2L13.7667 26.4667L13.1667 27.2ZM25.7 21.5333C25.1667 22.0666 24.5667 21.7333 24.3667 21.5333L20.3 17.4667C20.0333 17.2 19.6333 17.2 19.3667 17.4667C19.1 17.7333 19.1 18.1333 19.3667 18.4L24.1667 23.2C24.5 23.5333 24.5 24.1333 24.1667 24.5333C23.8333 24.8666 23.2333 24.8666 22.8333 24.5333L16.9 18.6C16.6333 18.3333 16.2333 18.3333 15.9667 18.6C15.7 18.8666 15.7 19.2666 15.9667 19.5333L21.1667 24.7333C21.5 25.0666 21.5 25.6666 21.1667 26.0666C20.8333 26.4 20.2333 26.4 19.8333 26.0666L14.6333 20.8666C14.3667 20.6 13.9667 20.6 13.7 20.8666C13.4333 21.1333 13.4333 21.5333 13.7 21.8L17.7 25.8C18.1 26.2 18.0333 26.8 17.7 27.1333C17.3 27.4667 16.7667 27.4667 16.4333 27.1333L15.3 26L7.7 18.4667C7.23333 18 6.9 17.3333 6.83333 16.6666C6.7 15.8666 6.36666 15.0666 5.9 14.4667L11.8333 8.53332C12.5 9.06665 13.2333 9.39998 14.0333 9.46665C14.7 9.53332 15.3667 9.86665 15.8333 10.3333L16.0333 10.5333L12.2333 12.9333C9.9 14.5333 11.9 17.8666 14.2333 16.8L19.8333 14.4L25.5667 20.1333C25.9667 20.6 26.0337 21.2 25.7 21.5333ZM26.1667 17.7333C26.1 18.0666 26.0333 18.3333 25.9 18.6L20.3667 13.0666C20.3667 13.0666 20.1 12.8 19.7 13L13.7667 15.6C13.3 15.8 12.8333 15.6 12.5667 15.2C12.3667 14.8 12.5 14.2666 12.9 14L17.4333 11.2666C17.4333 11.2666 18.3667 10.6 19.0333 10.6C19.8333 10.6 20.6333 10.1333 21.2333 9.66665L27.1667 15.6C26.6333 16.2 26.3 16.9333 26.1667 17.7333ZM28.7667 15.3333L21.4333 7.99998L23.5 5.93332L30.8333 13.2666L28.7667 15.3333Z" fill="white"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_28_80">
+                      <rect width="32" height="32" fill="white" transform="translate(0.5)"/>
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+
+              <div class="ms-5">
+                <span class="ms-4 mt-5" style="display: block; font-family: 'Poppins', sans-serif; color: rgba(255, 255, 255, 1); font-weight: 700;">Comprehensive Support</span>
+                <span class="ms-4" style="display: block; color:rgba(255, 255, 255, 1); font-weight: 400;">24/7 Access to the Heart of
+                </span>
+                <span style="display:block; margin-left: 70px; color:rgba(255, 255, 255, 1); font-family: 400;">Collaboration</span>
+              </div>
+            </div>
+          </div>
+
+          <!--Card 2-->
+          <div class="col-12 col-sm-10 col-md-6 col-lg-4 d-flex">
+            <div class="card shadow-lg flex-fill" style="min-height:200px; background: linear-gradient(270deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.32) 100%); border-radius: 12px; padding: 20px;">
+              <div class="d-flex justify-content-center">
+                <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13.9266 3.75996L4.68663 11.16C3.64663 11.9867 2.97995 13.7334 3.20661 15.0401L4.97993 25.6533C5.29993 27.5467 7.11327 29.0801 9.03327 29.0801H23.9666C25.8733 29.0801 27.7 27.5333 28.02 25.6533L29.7933 15.0401C30.0066 13.7334 29.3399 11.9867 28.3133 11.16L19.0733 3.7733C17.6466 2.62663 15.34 2.62662 13.9266 3.75996Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M13.6733 19.1734C15.3667 17.56 17.6333 17.56 19.3267 19.1734" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M22.1534 16.3467C21.4334 15.64 20.6334 15.0934 19.8067 14.6934C17.6867 13.68 15.3134 13.68 13.1801 14.6934C12.3534 15.0934 11.5667 15.64 10.8334 16.3467" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M16.494 22.6667H16.506" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+
+              <div class="ms-5">
+                <span class="ms-4 mt-5" style="display: block; font-family: 'Poppins', sans-serif; color: rgba(255, 255, 255, 1); font-weight: 700;">Comprehensive Support</span>
+                <span class="ms-4" style="display: block; color:rgba(255, 255, 255, 1); font-weight: 400;">24/7 Access to the Heart of
+                </span>
+                <span style="display:block; margin-left: 70px; color:rgba(255, 255, 255, 1); font-family: 400;">Collaboration</span>
+              </div>
+            </div>
+          </div>
+
+          <!--Card 3-->
+          <div class="col-12 col-sm-10 col-md-6 col-lg-4 d-flex">
+            <div class="card shadow-lg flex-fill" style="min-height:200px; background: linear-gradient(270deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.32) 100%); border-radius: 12px; padding: 20px;">
+              <div class="d-flex justify-content-center">
+                <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.9133 19.5999L14.9133 21.5999L20.2467 16.2666" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M13.8333 8.00008H19.1666C21.8333 8.00008 21.8333 6.66675 21.8333 5.33341C21.8333 2.66675 20.5 2.66675 19.1666 2.66675H13.8333C12.5 2.66675 11.1666 2.66675 11.1666 5.33341C11.1666 8.00008 12.5 8.00008 13.8333 8.00008Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M21.8333 5.36011C26.2733 5.60011 28.5 7.24011 28.5 13.3334V21.3334C28.5 26.6668 27.1667 29.3334 20.5 29.3334H12.5C5.83333 29.3334 4.5 26.6668 4.5 21.3334V13.3334C4.5 7.25344 6.72667 5.60011 11.1667 5.36011" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+
+              <div class="ms-5">
+                <span class="ms-4 mt-5" style="display: block; font-family: 'Poppins', sans-serif; color: rgba(255, 255, 255, 1); font-weight: 700;">Comprehensive Support</span>
+                <span class="ms-4" style="display: block; color:rgba(255, 255, 255, 1); font-weight: 400;">24/7 Access to the Heart of
+                </span>
+                <span style="display:block; margin-left: 70px; color:rgba(255, 255, 255, 1); font-family: 400;">Collaboration</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Second Section -->
+    <section class="secondMain" style="width: 100%; background: rgba(243, 244, 246, 1);">
+      <div style="width: 100%; height: 150px; color:rgba(249, 115, 22, 1); display: flex; flex-direction: column; justify-content: center; align-items: center; font-size: medium; font-weight: 700; background-color: white;">
+        <span style="display: inline-block; text-align: center;">
+          From dedicated desks to private offices, find the space that fits<br>
+        </span>
+        <span style="display: block;">your work style.</span>
+      </div>
+
+      <div class="text-center mt-5">
+        <h2 style="color: rgba(249, 115, 22, 1); font-family: 'Poppins', sans-serif;">Membership Plans</h2>
+        <span style="color:rgba(0, 0, 0, 1); font-size: 20px; font-weight: 400; font-family: 'Poppins', sans-serif; display: inline-block; text-align: center;">
+          Access to a shared workspace where members can <br>
+          <span style="display: block;">choose any available desk.</span>
+        </span>
+      </div>
+
+      <!--Cards-->
+      <section style="width: 100%; background: rgba(243, 244, 246, 1); padding: 60px 0;">
+        <div class="container-fluid">
+          <div class="row justify-content-center g-3 px-3 px-lg-5">
+
+            <!-- Card 1 -->
+            <div class="col-12 col-md-6 col-lg-4 d-flex">
+              <div class="card shadow-lg flex-fill" style="border-radius: 12px; padding: 20px;">
+                <h4 class="fw-bold text-center mb-2">Hot Desk Membership</h4>
+                <p class="text-muted text-center" style="font-size: 15px;">
+                  Access to a shared workspace where members can choose any available desk.
+                </p>
+
+                <div class="d-flex align-items-start mt-3">
+                  <i class="fa-regular fa-clock me-2 mt-1" style="color: black;"></i>
+                  <div>
+                    <span class="fw-bold">Access Hours:<span style="color: #f97316;">Monday to Friday,</span></span>
+                    <span style="color: #f97316; display: block; margin-left: 120px;">9 AM – 5 PM.</span>
+                  </div>
+                </div>
+
+                <ul class="list-unstyled mt-4" style="font-size: 15px;">
+                  <li class="mb-2"><i class="fa-solid fa-check text-success me-2"></i> High-speed Wi-Fi.</li>
+                  <li class="mb-2"><i class="fa-solid fa-check text-success me-2"></i> Access to communal areas (kitchen,lounge).</li>
+                  <li class="mb-2"><i class="fa-solid fa-check text-success me-2"></i> Printing and copying services.</li>
+                  <li><i class="fa-solid fa-check text-success me-2"></i> Networking events and workshops.</li>
+                </ul>
+
+                <h5 class="fw-bold mt-5 ms-4" style="color: #f97316;">
+                  Price: <span style="color: #f97316;">$200</span><span class="fw-normal text-dark">/month.</span>
+                </h5>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-12 col-md-6 col-lg-4 d-flex">
+              <div class="card shadow-lg flex-fill" style="border-radius: 12px; padding: 20px;">
+                <h4 class="fw-bold text-center mb-2">Dedicated Desk Membership</h4>
+                <p class="text-muted text-center" style="font-size: 15px;">
+                  A personal desk in a shared office space reserved for the member.
+                </p>
+                <div class="d-flex align-items-start mt-3">
+                  <i class="fa-regular fa-clock me-2 mt-1" style="color: black;"></i>
+                  <div>
+                    <span class="fw-bold">Access Hours:</span>
+                    <span style="color: #f97316;"> 24/7 access.</span>
+                  </div>
+                </div>
+                <ul class="list-unstyled mt-5" style="font-size: 15px;">
+                  <li class="mb-2"><i class="fa-solid fa-check text-success me-2"></i> High-speed Wi-Fi.</li>
+                  <li class="mb-2"><i class="fa-solid fa-check text-success me-2"></i> Personal storage and space for your belongings.</li>
+                  <li class="mb-2"><i class="fa-solid fa-check text-success me-2"></i> Access to meeting rooms (limited hours).</li>
+                  <li><i class="fa-solid fa-check text-success me-2"></i> Invitations to exclusive member events.</li>
+                </ul>
+                <h5 class="fw-bold mt-5 ms-4" style="color: #f97316;">
+                  Price: <span style="color: #f97316;">$350</span><span class="fw-normal text-dark">/month.</span>
+                </h5>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-12 col-md-6 col-lg-4 d-flex">
+              <div class="card shadow-lg flex-fill" style="border-radius: 12px; padding: 20px;">
+                <h4 class="fw-bold text-center mb-2">Corporate Membership</h4>
+                <p class="text-muted text-center" style="font-size: 15px;">
+                  Tailored for businesses that want to provide coworking access to multiple employees.
+                </p>
+                <div class="d-flex align-items-start mt-3">
+                  <i class="fa-regular fa-clock me-2 mt-1" style="color: black;"></i>
+                  <div>
+                    <span class="fw-bold">Access Hours:</span>
+                    <span style="color: #f97316;">24/7 access.</span>
+                  </div>
+                </div>
+                <ul class="list-unstyled mt-5" style="font-size: 15px;">
+                  <li class="mb-2"><i class="fa-solid fa-check text-success me-2"></i> Dedicated account manager.</li>
+                  <li class="mb-2"><i class="fa-solid fa-check text-success me-2"></i> Access to communal areas (kitchen, lounge).</li>
+                  <li class="mb-2"><i class="fa-solid fa-check text-success me-2"></i> Flexible desk arrangements.</li>
+                  <li><i class="fa-solid fa-check text-success me-2"></i> Access to meeting rooms and event spaces.</li>
+                </ul>
+                <h5 class="fw-bold mt-5 ms-4" style="color: #f97316;">
+                  Price: <span style="color: #f97316;">$1200</span><span class="fw-normal text-dark">/month.</span>
+                </h5>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <div class="d-flex justify-content-center align-items-center">
+        <h2 style="color: rgba(249, 115, 22, 1); font-family: 'Poppins', sans-serif;">Gallery</h2>
+      </div>
+
+      <!--Gallery-->
+      <section style="width: 100%; background: rgba(243, 244, 246, 1); padding: 60px 0;">
+        <div class="container-fluid">
+          <div class="row justify-content-center g-3 px-3 px-lg-5">
+
+            <!-- Card 1 -->
+            <div class="col-12 col-md-6 col-lg-4 d-flex">
+              <div class="card shadow-lg flex-fill" style="border-radius: 12px; height: 350px;">
+                <img src="./Assets/onejpg.jpg" alt="photo_one" class="img-fluid w-100 h-100" style="border-radius: 12px; object-fit: cover;">
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-12 col-md-6 col-lg-4 d-flex">
+              <div class="card shadow-lg flex-fill" style="border-radius: 12px; height: 350px;">
+                <img src="./Assets/two.jpg" alt="photo_two" class="img-fluid w-100 h-100" style="border-radius: 12px; object-fit: cover;">
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-12 col-md-6 col-lg-4 d-flex">
+              <div class="card shadow-lg flex-fill" style="border-radius: 12px; height: 350px;">
+                <img src="./Assets/three.jpg" alt="photo_three" class="img-fluid w-100 h-100" style="border-radius: 12px; object-fit: cover;">
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+    </section>
+  </main>
+</body>
+</html>
